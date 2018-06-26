@@ -7,7 +7,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      speed: 10
+      speed: 0
     }
     // Initialize Firebase
     var config = {
@@ -39,9 +39,9 @@ class App extends Component {
     firebase.database().ref('users/' + '1').set(user, 
       function(error) {
         if (error) {
-          console.log('Error: ' + error);
+          console.log('---> Error: ' + error);
         } else {
-          console.log('Data saved successfully!');
+          console.log('---> Data saved successfully!');
         }
       });
   }
@@ -49,7 +49,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>{this.state.speed}</h1>
+        <h1>Speed: {this.state.speed}</h1>
       </div>
     );
   }
