@@ -8,7 +8,7 @@ This sample application demonstrates the ability to connect to Firebase database
 
 - Obtain credentials from the Firebase console: "Firebase -> Project Settings -> Add Firebase to your web app":
 
-  ````json
+  ````js
   // Initialize Firebase
   var config = {
       apiKey: "apiKey",
